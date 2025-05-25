@@ -1,47 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Integrantes</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
+<html lang="pt-br">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Portal HC - Integrantes</title>
+      <link rel="icon" type="image/png" href="../img/icone.png">
+      <link rel="stylesheet" href="../css/style.css">
+      <script src="../js/sidebar.js"></script>
+  </head>
 <body>
-  <nav>
+
+  <button id="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+  <nav id="sidebar">
     <ul>
-      <li><img src="../img/logo.png" alt="Logo do Site" style="height: 50px;"></li>
+      <li><img src="../img/logo.png" class="logo" alt="Logo do Site"></li>
       <li><a href="../index.html">Home</a></li>
-      <li><a href="#">FAQ</a></li>
+      <li><a href="faq.html">FAQ</a></li>
       <li><a href="#">Integrantes</a></li>
       <li><a href="contato.html">Contato</a></li>
+      <li><a href="redes-sociais.html" class="redes-sociais">Redes Sociais</a></li>
     </ul>
+    <button id="close-menu" aria-label="Fechar menu">&times;</button>
   </nav>
 
   <main>
-    <div class="card-container">
-      <div class="card">
-        <img src="../img/vinicius.jpg" alt="Foto do integrante 1">
-        <p><span class="destaque">Nome:</span> Vinícius Luis</p>
+    <h1>Integrantes</h1>
+    <div class="integrantes-container">
+      <div class="integrante-card">
+        <img src="../img/vinicius.jpg" alt="Foto do integrante 1" class="integrantes-icon">
+        <p><span class="destaque">Nome:</span> Vinícius Luis Exposito Morassi Garcia</p>
         <p><span class="destaque">RM:</span> 563340</p>
         <p><span class="destaque">Turma:</span> 1TDSPJ</p>
-        <p><span class="destaque">Github:</span> <a href="https://github.com/vinxlux" target="_blank">?</a></p>
-        <p><span class="destaque">Linkedin:</span> <a href="https://www.linkedin.com/in/vin%C3%ADcius-luis-90ba05309/" target="_blank">?</a></p>
+        <p><span class="destaque">Github:</span>
+          <a href="https://github.com/vinxlux" target="_blank" rel="noopener noreferrer">
+            <img src="../img/github-icon.png" alt="Icone do Github" class="icones-de-link">
+          </a>
+        </p>
+        <p><span class="destaque">Linkedin:</span>
+          <a href="https://www.linkedin.com/in/vin%C3%ADcius-luis-90ba05309/" target="_blank" rel="noopener noreferrer">
+            <img src="../img/linkedin-icon.png" alt="Icone do LinkedIn" class="icones-de-link">
+          </a>
+        </p>
       </div>
-      <div class="card">
-        <img src="../img/raphael.jpg" alt="Foto do integrante 2">
-        <p><span class="destaque">Nome:</span>Raphael Gomes Mancera</p>
-        <p><span class="destaque">RM:</span>562279</p>
+      <div class="integrante-card">
+        <img src="../img/raphael.jpg" alt="Foto do integrante 2" class="integrantes-icon">
+        <p><span class="destaque">Nome:</span> Raphael Gomes Mancera</p>
+        <p><span class="destaque">RM:</span> 562279</p>
         <p><span class="destaque">Turma:</span> 1TDSPJ</p>
-        <p><span class="destaque">Github:</span> <a href="https://github.com/RaphaelGomesMancera" target="_blank">?</a></p>
-        <p><span class="destaque">Linkedin:</span> <a href="https://www.linkedin.com/in/raphael-gomes-mancera-0927b8364?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">?</a></p>
+        <p><span class="destaque">Github:</span>
+          <a href="https://github.com/RaphaelGomesMancera" target="_blank" rel="noopener noreferrer">
+            <img src="../img/github-icon.png" alt="Icone do Github" class="icones-de-link">
+          </a>
+        </p>
+        <p><span class="destaque">Linkedin:</span>
+          <a href="https://www.linkedin.com/in/raphael-gomes-mancera-0927b8364?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
+            <img src="../img/linkedin-icon.png" alt="Icone do LinkedIn" class="icones-de-link">
+          </a>
+        </p>
       </div>
-      <div class="card">
-        <img src="../img/carlos.jpg" alt="Foto do integrante 3">
-        <p><span class="destaque">Nome:</span>Carlos Alberto Guedes</p>
-        <p><span class="destaque">RM:</span>566022</p>
+      <div class="integrante-card">
+        <img src="../img/carlos.jpg" alt="Foto do integrante 3" class="integrantes-icon">
+        <p><span class="destaque">Nome:</span> Carlos Alberto Guedes</p>
+        <p><span class="destaque">RM:</span> 566022</p>
         <p><span class="destaque">Turma:</span> 1TDSPJ</p>
-        <p><span class="destaque">Github:</span> <a href="https://github.com/carlosguedesneto" target="_blank">?</a></p>
-        <p><span class="destaque">Linkedin:</span> <a href="https://www.linkedin.com/in/carlos-alberto-13782a353?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">?</a></p>
+        <p><span class="destaque">Github:</span>
+          <a href="https://github.com/carlosguedesneto" target="_blank" rel="noopener noreferrer">
+            <img src="../img/github-icon.png" alt="Icone do Github" class="icones-de-link">
+          </a>
+        </p>
+        <p><span class="destaque">Linkedin:</span>
+          <a href="https://www.linkedin.com/in/carlos-alberto-13782a353?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
+            <img src="../img/linkedin-icon.png" alt="Icone do LinkedIn" class="icones-de-link">
+          </a>
+        </p>
       </div>
     </div>
   </main>
@@ -52,5 +83,6 @@
       <li><a href="redes-sociais.html">Redes Sociais</a></li>
     </ul>
   </footer>
+  
 </body>
 </html>

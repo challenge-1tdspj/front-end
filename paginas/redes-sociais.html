@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redes Sociais</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Portal HC - Redes Sociais</title>
+      <link rel="icon" type="image/png" href="../img/icone.png">
+      <link rel="stylesheet" href="../css/style.css">
+      <script src="../js/sidebar.js"></script>
+  </head>
 <body>
-  <nav>
+
+  <button id="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+  <nav id="sidebar">
     <ul>
-      <li><img src="../img/logo.png" alt="Logo do Site" style="height: 50px;"></li>
+      <li><img src="../img/logo.png" class="logo" alt="Logo do Site"></li>
       <li><a href="../index.html">Home</a></li>
-      <li><a href="#">FAQ</a></li>
-      <li><a href="../paginas/integrantes.html">Integrantes</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="integrantes.html">Integrantes</a></li>
       <li><a href="contato.html">Contato</a></li>
+      <li><a href="#" class="redes-sociais">Redes Sociais</a></li>
     </ul>
+    <button id="close-menu" aria-label="Fechar menu">&times;</button>
   </nav>
 
   <main>
@@ -44,5 +50,6 @@
       <li><a href="#">Redes Sociais</a></li>
     </ul>
   </footer>
+
 </body>
 </html>

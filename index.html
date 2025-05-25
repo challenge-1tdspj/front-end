@@ -1,21 +1,253 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal HC - Tutorial</title>
+  <link rel="icon" type="image/png" href="../img/icone.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/sidebar.js"></script>
+  <script src="./js/img-explain-center.js"></script>
+  <script src="./js/tutorial-toggle.js"></script>
 </head>
 <body>
-  <nav>
+  <button id="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+  <nav id="sidebar">
     <ul>
-      <li><img src="../img/logo.png" alt="Logo do Site" style="height: 50px;"></li>
+      <li><img src="./img/logo.png" class="logo" alt="Logo do Site"></li>
       <li><a href="#">Home</a></li>
-      <li><a href="#">FAQ</a></li>
+      <li><a href="./paginas/faq.html">FAQ</a></li>
       <li><a href="./paginas/integrantes.html">Integrantes</a></li>
       <li><a href="./paginas/contato.html">Contato</a></li>
+      <li><a href="./paginas/redes-sociais.html" class="redes-sociais">Redes Sociais</a></li>
     </ul>
+    <button id="close-menu" aria-label="Fechar menu">&times;</button>
   </nav>
+
+  <main>
+    <section id="tutorial-portal-paciente">
+      <h1>Como Utilizar o Portal do Paciente HC</h1>
+      <ol class="tutorial-list">
+        <li>
+          <button class="tutorial-toggle">1. Baixe o Aplicativo</button>
+          <div class="tutorial-content">
+            <div class="step-row">
+              <div class="step-img-col">
+                <div class="img-explain" data-center="Ícone da Play Store, indicando onde baixar o aplicativo para Android.">
+                  <img src="./img/playstore.png" alt="Play Store">
+                  <span data-center="Ícone da Play Store, indicando onde baixar o aplicativo para Android.">Ícone da Play Store, indicando onde baixar o aplicativo para Android.</span>
+                </div>
+                <div class="img-explain" data-center="Ícone da App Store, indicando onde baixar o aplicativo para iOS.">
+                  <img src="./img/appstore.png" alt="App Store">
+                  <span data-center="Ícone da App Store, indicando onde baixar o aplicativo para iOS.">Ícone da App Store, indicando onde baixar o aplicativo para iOS.</span>
+                </div>
+              </div>
+              <div class="step-desc">
+                <p>Procure por <b>Portal do Paciente HC</b> na Play Store (Android) ou App Store (iOS). Toque em <b>Instalar</b> e aguarde o download.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <button class="tutorial-toggle">2. Acesse o Portal</button>
+          <div class="tutorial-content">
+            <div class="step-row">
+              <div class="step-img-col">
+                <div class="img-explain" data-center="Tela inicial do aplicativo, onde você pode acessar o portal ou iniciar o cadastro.">
+                  <img src="./img/pagina-inicial.png" alt="Tela Inicial do App">
+                  <span data-center="Tela inicial do aplicativo, onde você pode acessar o portal ou iniciar o cadastro.">Tela inicial do aplicativo, onde você pode acessar o portal ou iniciar o cadastro.</span>
+                </div>
+              </div>
+              <div class="step-desc">
+                <p>Abra o aplicativo e toque em <b>Acessar o Portal</b>. Digite seu CPF e senha cadastrados para fazer login. Se for seu primeiro acesso, clique em <b>Primeiro Acesso</b> para cadastrar sua senha.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <button class="tutorial-toggle">3. Cadastro de Senha</button>
+          <div class="tutorial-content">
+            <div class="step-row">
+              <div class="step-img-col">
+                <div class="img-explain" data-center="Tela para cadastrar uma nova senha.">
+                  <img src="./img/cadastrar-senha.png" alt="Cadastrar Senha">
+                  <span data-center="Tela para cadastrar uma nova senha.">Tela para cadastrar uma nova senha.</span>
+                </div>
+                <div class="img-explain" data-center="Campo para digitar o CPF e data de nascimento.">
+                  <img src="./img/cadastro-cpf.png" alt="Cadastro de CPF">
+                  <span data-center="Campo para digitar o CPF e data de nascimento.">Campo para digitar o CPF e data de nascimento.</span>
+                </div>
+              </div>
+              <div class="step-desc">
+                <p>Antes do primeiro acesso, clique em <b>CADASTRAR SENHA</b>. Na tela seguinte, digite apenas os números do seu CPF e sua data de nascimento. Clique em <b>LOCALIZAR PACIENTE</b> para continuar.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <button class="tutorial-toggle">4. Confirmação de Dados e Nova Senha</button>
+          <div class="tutorial-content">
+            <div class="step-row">
+              <div class="step-img-col">
+                <div class="img-explain" data-center="Pergunta sobre o ano de nascimento.">
+                  <img src="./img/pergunta-ano.png" alt="Pergunta Ano de Nascimento">
+                  <span data-center="Pergunta sobre o ano de nascimento.">Pergunta sobre o ano de nascimento.</span>
+                </div>
+                <div class="img-explain" data-center="Pergunta sobre o nome da mãe.">
+                  <img src="./img/pergunta-mae.png" alt="Pergunta Nome da Mãe">
+                  <span data-center="Pergunta sobre o nome da mãe.">Pergunta sobre o nome da mãe.</span>
+                </div>
+                <div class="img-explain" data-center="Campos para cadastrar e confirmar a nova senha.">
+                  <img src="./img/campos-senha.png" alt="Campos para Cadastrar Senha">
+                  <span data-center="Campos para cadastrar e confirmar a nova senha.">Campos para cadastrar e confirmar a nova senha.</span>
+                </div>
+                <div class="img-explain" data-center="Mensagem de sucesso após o cadastro da senha.">
+                  <img src="./img/cadastro-sucesso.png" alt="Senha Cadastrada com Sucesso">
+                  <span data-center="Mensagem de sucesso após o cadastro da senha.">Mensagem de sucesso após o cadastro da senha.</span>
+                </div>
+              </div>
+              <div class="step-desc">
+                <p>Responda corretamente às perguntas de segurança, como ano de nascimento e nome da mãe. Após isso, cadastre sua nova senha e confirme. Você verá uma mensagem de sucesso ao finalizar.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <button class="tutorial-toggle">5. Atualize seus Dados</button>
+          <div class="tutorial-content">
+            <div class="step-row">
+              <div class="step-img-col">
+                <div class="img-explain" data-center="Tela para acessar a conta.">
+                  <img src="./img/acessar-conta.png" alt="Tela de Acessar Conta">
+                  <span data-center="Tela para acessar a conta.">Tela para acessar a conta.</span>
+                </div>
+                <div class="img-explain" data-center="Menu principal do aplicativo.">
+                  <img src="./img/menu-principal.png" alt="Menu Principal">
+                  <span data-center="Menu principal do aplicativo.">Menu principal do aplicativo.</span>
+                </div>
+                <div class="img-explain" data-center="Campos para atualizar e confirmar e-mail e telefone.">
+                  <img src="./img/campos-dados.png" alt="Campos de Dados">
+                  <span data-center="Campos para atualizar e confirmar e-mail e telefone.">Campos para atualizar e confirmar e-mail e telefone.</span>
+                </div>
+              </div>
+              <div class="step-desc">
+                <p>No menu principal, acesse <b>Meus Dados</b> para atualizar e confirmar seu e-mail e telefone. Mantenha seus dados sempre atualizados para garantir o recebimento de informações importantes.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <button class="tutorial-toggle">6. Veja e Entre na Consulta</button>
+          <div class="tutorial-content">
+            <div class="step-row">
+              <div class="step-img-col">
+                <div class="img-explain" data-center="Botão para entrar na teleconsulta.">
+                  <img src="./img/entrar-teleconsulta.png" alt="Entrar na Teleconsulta">
+                  <span data-center="Botão para entrar na teleconsulta.">Botão para entrar na teleconsulta.</span>
+                </div>
+                <div class="img-explain" data-center="Tela de sala de espera virtual.">
+                  <img src="./img/sala-espera.png" alt="Sala de Espera">
+                  <span data-center="Tela de sala de espera virtual.">Tela de sala de espera virtual.</span>
+                </div>
+                <div class="img-explain" data-center="Card com detalhes da teleconsulta agendada.">
+                  <img src="./img/card-teleconsulta.png" alt="Card Teleconsulta">
+                  <span data-center="Card com detalhes da teleconsulta agendada.">Card com detalhes da teleconsulta agendada.</span>
+                </div>
+              </div>
+              <div class="step-desc">
+                <p>Veja suas consultas em <b>Minhas Agendas</b> ou <b>Teleconsulta</b>. Confira os detalhes do agendamento e clique em <b>Entrar na Teleconsulta</b> no horário marcado. Aguarde na sala de espera até ser chamado pelo profissional de saúde.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <button class="tutorial-toggle">7. Participe da Teleconsulta</button>
+          <div class="tutorial-content">
+            <div class="step-row">
+              <div class="step-img-col">
+                <div class="img-explain" data-center="Aceite do termo de consentimento.">
+                  <img src="./img/termo-aceite.png" alt="Termo de Aceite">
+                  <span data-center="Aceite do termo de consentimento.">Aceite do termo de consentimento.</span>
+                </div>
+                <div class="img-explain" data-center="Permissão para uso da câmera.">
+                  <img src="./img/permissao-camera.png" alt="Permissão de Câmera">
+                  <span data-center="Permissão para uso da câmera.">Permissão para uso da câmera.</span>
+                </div>
+                <div class="img-explain" data-center="Opções de configuração da webcam.">
+                  <img src="./img/opcoes-webcam.png" alt="Opções da Webcam">
+                  <span data-center="Opções de configuração da webcam.">Opções de configuração da webcam.</span>
+                </div>
+                <div class="img-explain" data-center="Permissão para uso do microfone.">
+                  <img src="./img/permissao-microfone.png" alt="Permissão de Microfone">
+                  <span data-center="Permissão para uso do microfone.">Permissão para uso do microfone.</span>
+                </div>
+                <div class="img-explain" data-center="Confirmação do áudio.">
+                  <img src="./img/confirmar-audio.png" alt="Confirmação de áudio">
+                  <span data-center="Confirmação do áudio.">Confirmação do áudio.</span>
+                </div>
+                <div class="img-explain" data-center="Tela de conexão ao teste de áudio.">
+                  <img src="./img/conectando-audio.png" alt="Conectando ao Teste de Áudio">
+                  <span data-center="Tela de conexão ao teste de áudio.">Tela de conexão ao teste de áudio.</span>
+                </div>
+                <div class="img-explain" data-center="Ícone indicando câmera desligada.">
+                  <img src="./img/icone-camera-off.png" alt="Ícone Câmera Desligada">
+                  <span data-center="Ícone indicando câmera desligada.">Ícone indicando câmera desligada.</span>
+                </div>
+                <div class="img-explain" data-center="Tela da consulta em vídeo.">
+                  <img src="./img/consulta-video.png" alt="Consulta em Vídeo">
+                  <span data-center="Tela da consulta em vídeo.">Tela da consulta em vídeo.</span>
+                </div>
+                <div class="img-explain" data-center="Participando da teleconsulta.">
+                  <img src="./img/dentro-da-teleconsulta.png" alt="Participando da Teleconsulta">
+                  <span data-center="Participando da teleconsulta.">Participando da teleconsulta.</span>
+                </div>
+              </div>
+              <div class="step-desc">
+                <p>Leia e aceite o <b>Termo de Consentimento</b> para iniciar. Permita o uso da câmera e microfone quando solicitado. Configure as opções de webcam e microfone, se necessário. Você pode ativar/desativar sua câmera durante a consulta. Participe no horário agendado.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <button class="tutorial-toggle">8. Finalize e Avalie</button>
+          <div class="tutorial-content">
+            <div class="step-row">
+              <div class="step-img-col">
+                <div class="img-explain" data-center="Tela de finalização da teleconsulta.">
+                  <img src="./img/fim-teleconsulta.png" alt="Fim da Teleconsulta">
+                  <span data-center="Tela de finalização da teleconsulta.">Tela de finalização da teleconsulta.</span>
+                </div>
+                <div class="img-explain" data-center="Confirmação de resposta registrada ou avaliação enviada.">
+                  <img src="./img/resposta-registrada.png" alt="Resposta Registrada">
+                  <span data-center="Confirmação de resposta registrada ou avaliação enviada.">Confirmação de resposta registrada ou avaliação enviada.</span>
+                </div>
+              </div>
+              <div class="step-desc">
+                <p>Ao término, aparecerá uma mensagem de agradecimento. Você pode registrar sua resposta ou avaliação, se solicitado.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <button class="tutorial-toggle">9. Outras Funcionalidades</button>
+          <div class="tutorial-content">
+            <div class="step-row">
+              <div class="step-img-col">
+                <div class="img-explain" data-center="Menu principal do aplicativo, onde é possível acessar outras funcionalidades como resultados, receitas e diário de saúde.">
+                  <img src="./img/menu-principal.png" alt="Menu Principal">
+                  <span data-center="Menu principal do aplicativo, onde é possível acessar outras funcionalidades como resultados, receitas e diário de saúde.">Menu principal do aplicativo, onde é possível acessar outras funcionalidades como resultados, receitas e diário de saúde.</span>
+                </div>
+              </div>
+              <div class="step-desc">
+                <p>Acesse <b>Meus Resultados</b>, <b>Minhas Receitas</b> e <b>Diário de Saúde</b> pelo menu principal para acompanhar sua saúde de forma completa.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ol>
+      <p class="tutorial-help">Em caso de dúvidas, consulte o manual completo ou entre em contato com o suporte da instituição.</p>
+    </section>
+  </main>
 
   <footer>
     <ul>
